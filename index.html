@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="signup.jpg" type="image/x-icon">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Logo">
+    </nav>  
+    <div class="wrapper">
+        <div class="inner">
+            <div class="image holder">
+                <img src="image.gif" width="350px" height="350px">
+            </div>
+
+            <form id="signup-form">
+                <h3 size="57 px" >Sign Up</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" class="form-control">
+                    <input type="text" placeholder="Last Name" class="form-control">
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="text" id="username" placeholder="UserName" class="form-control">
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="text" id="email" placeholder="Email" class="form-control">
+                </div>
+
+                <div class="form-wrapper">
+                    <input  type="Password" placeholder="Password" id="password" class="form-control" onkeyup='passConfirm();'>
+                </div>
+                
+                <button type="submit" class="button">Sign up</button>
+                
+                <p class="para1">By clicking the Sign Up button, you agree to our
+                    <a href="#" >Terms and Condition</a> and <a href="#">Policy Privacy</a>
+                    </p>
+
+                    <p class="para2" size="17px" >Already have an account? <a href="login.html" >Login Here</a></p>
+                  </form>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('signup-form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); 
+      const username = form.elements.username.value;
+      const email = form.elements.email.value;
+      const password = form.elements.password.value;
+      if (!username || !email || !password) {
+        alert('Please fill in all fields');
+      } else if (password.length < 8) {
+        alert('Password must be at least 8 characters long');
+      } else {
+        alert('Account Created successfully!');
+        location.href = 'login.html';
+      }
+    });   
+    </script> 
+</body>
+</html>

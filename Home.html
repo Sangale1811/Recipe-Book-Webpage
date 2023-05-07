@@ -35,13 +35,14 @@
        </a>
     </nav>
           <div class="input-group">
-            <div class="form-outline">
+            <!-- <div class="form-outline">
               <input type="search" id="form1" class="form-control" placeholder="Search Here...." />
               <label class="form-label" id="icon" for="form1">Search</label>
             </div>
             <button type="button" class="btn btn-primary">
               <i class="fa fa-search"></i>
-            </button>
+            </button> -->
+            <button class="btn btn-outline-success" type="submit" id="search-btn" style="margin-left:300px;width: 130px;background-color: rgb(217, 33, 33);font-size: 20px; color: white;" onclick="myFunction()">Search</button>
           </div>
           </div>
         </div>
@@ -79,7 +80,7 @@
                 <span style="--i: 2;color:rgb(217, 33, 33);font-weight:bold;font-size: 50px;">Dishes</span>
               </marquee>
         </div>
-        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+        <div class="col-lg-4 col-sm-6 dish-box-wp">
             <div class="dish-box text-center">
                 <div class="dist-img">
                     <img src="image1.jpg" alt="">
@@ -96,7 +97,7 @@
         </div>
 
         <!-- 2 -->
-                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                <div class="col-lg-4 col-sm-6 dish-box-wp " >
                     <div class="dish-box text-center">
                         <div class="dist-img">
                             <img src="image2.jpg" alt="" >
@@ -113,7 +114,7 @@
                 </div>
 
                 <!-- 3 -->
-                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                <div class="col-lg-4 col-sm-6 dish-box-wp">
                     <div class="dish-box text-center">
                         <div class="dist-img">
                             <img src="image3.jpg" alt="" style="width:60%;height:50%">
@@ -129,6 +130,12 @@
                     </div>
                 </div>
                 <p id="footer">COPYRIGHT © 2023; Designed by Shivani Sangale</p>
+
+                <script>
+                    function myFunction(){
+                      window.location="search.html";
+                    }
+                  </script>
 
 </body>
 </html>

@@ -1,0 +1,135 @@
+body {
+    text-align: center;
+    margin-top: 40px;
+    background-color: black;
+  }
+
+         .searchBtn {
+    border-radius: 10px;
+    width: 120px;
+    height: 45px;
+    font-size: 22px;
+   background: rgb(235, 124, 124);
+  }
+  #search {
+    width: 515px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 18px;
+  }
+  .recipe {
+  max-width: 660px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flow-root;
+  margin-left: 630px;
+  border-radius: 15px;
+}
+
+.recipe img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 13px;
+  border-radius: 15px ;
+}
+.recipe img:hover{
+  transform: scale(1.03);
+}
+h1{
+  background-color:rgb(255, 12, 73);
+  border-radius: 13px;
+  width:60%;
+  font-weight: 520;
+  color: white;
+ margin-left: 128px;
+ font-size: 35px;
+}
+h1:hover{
+  background-color: rgb(247, 76, 116);
+}
+
+.recipe h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recipe p {
+  color:rgb(212, 14, 140);
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.recipe ul { 
+ list-style-type: disc;
+  padding-left: 10px;
+  margin-bottom: 10px; 
+ font-size: 1.2em;
+  position: relative;
+  display:grid;
+  grid-template-columns: auto auto;
+  gap: 0.13em 1.1em;
+  padding: 1.2em 0 0 1.2em; 
+  color: black;
+} 
+ul li {
+  display: flex;
+  align-items: center;
+}
+ul li::before {
+  content: "•";
+  font-size: 1.1em;
+  margin-right: 0.5em;
+}
+.recipe li {
+  margin-bottom: 5px;
+  margin-right: 0.5em;
+}
+
+.recipe .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.recipe .btn:hover {
+  background-color: #555;
+}
+#background-video {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -1; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  #content {
+    position: relative;
+    z-index: 1;
+    /* Add styles for your content here */
+  }
+  .image{
+    height:70px;
+    width:60%;
+  } 
+  #blink {
+          font-size: 26px;
+          font-weight: bold;
+          font-family: sans-serif;
+          color:blue;
+      }

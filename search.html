@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Recipe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="icon" href="Images/logo.jpg">
+  <link rel="stylesheet" href="CSS/search.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="popup1" class="overlay">
+		<div class="popup">
+			<h2><i class="fa fa-cutlery" aria-hidden="true"></i> Recipe</h2>
+			<a class="close" href="#">&times;</a>
+			<br>
+			<div class="content">
+				<p id="recipestep"></p>
+			</div>
+		</div>
+	</div>
+
+
+  <video id="background-video" autoplay loop muted>
+    <source src="Images/videoBk.mp4" type="video/mp4">
+  </video>
+
+  <input type="text" style="font-size: 22px;" placeholder="Search here" id="search" aria-label="Search">
+  <button class="searchBtn" onclick="myFunction()"
+    style="background-color:rgb(255, 12, 73);color: white;"><i class="fa fa-search"></i> Search</button>
+  <div class="recipe">
+
+    <img src="Images/loading.gif" class="image" id="image" alt="Recipe Image">
+    <br>
+    <h1 id="meal"></h1>
+    <br>
+
+    <h3 id="blink">Ingredients:</h3>
+    <ul id="ingredients">
+    </ul>
+    <a href="#popup1" id="view-recipe-btn" class="btn">View Recipe</a>
+  </div>
+  </div>
+  </div>
+
+  <script src="Js/search.js"></script>
+</body>
+
+</html>

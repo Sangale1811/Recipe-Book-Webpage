@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="shortcut icon" href="Images/login.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="Images/logo.jpg" alt="Logo">
+    </div>
+  </nav>
+  <div class="wrapper">
+    <div class="inner">
+      <div class="image holder">
+        <img src="Images/login.jpg" width="350px" height="350px" />
+      </div>
+
+      <form id="login-form">
+        <h3>User Login</h3>
+        <br /><br />
+        <div class="form-wrapper">
+          <input type="text" placeholder="Email" id="email" class="form-control" name="email" />
+        </div>
+
+        <div class="form-wrapper">
+          <input type="Password" placeholder="Password" class="form-control" id="password" name="password" />
+        </div>
+        <span id="Message"></span>
+        <button type="submit" class="button">Login</button>
+        <p class="para2" size="17px">
+          Not have an account? <a href="register.html">Sign Up Here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script src="Js/login.js"></script>
+</body>
+
+</html>

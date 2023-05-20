@@ -14,7 +14,7 @@ The "Foodie-Hub" is a recipe book application. This "Foodie-Hub" recipe book web
     
     `git clone https://github.com/Sangale1811/Recipe-Book-Webpage.git`
     
-## Technologies Used :
+## Technologies Used 
 
 This app is built using the following technologies :
 

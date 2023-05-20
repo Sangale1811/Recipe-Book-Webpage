@@ -20,7 +20,7 @@ This app is built using the following technologies :
 
 ### Languages
 
-- HTML - Markup language for structuring the website's content.
+ #### HTML - Markup language for structuring the website's content.
 - CSS - To add custom styling.
 - javaScript - This can include validating the format of email addresses and and verifying password strength.
 
